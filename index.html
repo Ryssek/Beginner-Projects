@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="description" content="BASIC WEBSITE" />
+    <meta name="keywords" content="Website, Russel Giducos, CSS projects" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="shortcut icon"
+      href="images/titlefavicon.png"
+      type="image/x-icon"
+    />
+
+    <title>Russel Giducos Website</title>
+  </head>
+  <body>
+    <!-- TOP NAVIGATION -->
+    <button onclick="topFunction()" id="myBtn" title="Go to top">
+      <img src="images/titlefavicon.png" alt="Photo" class="icon" />
+
+      <img src="images/arrrow-removebg-preview.png" alt="Arrow" class="arrow" />
+    </button>
+
+    <nav>
+      <div id="navbar">
+        <a href="#about">About</a>
+        <a href="#calculator">Calculator</a>
+        <a href="#content">Introduction to CSS</a>
+        <a href="#top">Home</a>
+      </div>
+    </nav>
+
+    <!-- MAIN TEXT -->
+    <section id="home">
+      <h1 class="title">Information and Communication Technologies (ICT)</h1>
+      <h2 class="secondContent">Computer System Servicing NC II</h2>
+    </section>
+    <p class="sideText">by Russel M. Giducos</p>
+    <hr />
+    <section id="content">
+      <h3 class="introduction">WHAT IS CSS?</h3>
+      <p class="textBox">
+        <span class="text">
+          The Computer Systems Servicing (CSS) strand is a specialized
+          vocational course that focuses on the technical aspects of computer
+          systems and their maintenance. This strand is designed to equip
+          students with the knowledge and skills needed to diagnose, repair, and
+          maintain computer hardware and software. Through a combination of
+          theoretical lessons and hands-on practical training, students gain a
+          deep understanding of computer systems and learn how to troubleshoot
+          various issues that may arise.
+        </span>
+        <br />
+        <br />
+        <span class="text">
+          One of the key areas of focus in the CSS strand is computer hardware.
+          Students learn about the different components of a computer system,
+          such as the motherboard, CPU, memory, and storage devices. They also
+          learn how to assemble and disassemble computer systems, install and
+          configure hardware components, and diagnose and resolve
+          hardware-related problems. This knowledge is crucial in the field of
+          computer servicing, as hardware failures are common and require
+          technical expertise to fix.
+        </span>
+        <br />
+        <br />
+        <span class="text">
+          In addition to hardware, the CSS strand also covers software-related
+          topics. Students learn about operating systems, software installation,
+          and configuration. They gain hands-on experience in installing and
+          configuring different operating systems, such as Windows and Linux,
+          and learn how to troubleshoot software-related issues. This knowledge
+          is essential for ensuring the smooth operation of computer systems and
+          optimizing their performance.
+        </span>
+        <br />
+        <br />
+        <span class="text">
+          Another important aspect of the CSS strand is network troubleshooting
+          and maintenance. Students learn about computer networks, including
+          concepts such as IP addressing, subnetting, and network protocols.
+          They acquire skills in setting up and configuring network devices,
+          diagnosing network connectivity issues, and implementing security
+          measures. With the increasing reliance on networked systems in today's
+          world, these skills are highly valuable and in demand.
+        </span>
+        <br />
+        <br />
+        <span class="text">
+          The CSS strand also emphasizes the importance of professionalism and
+          customer service in the field of computer servicing. Students learn
+          about effective communication skills, problem-solving techniques, and
+          ethical practices. They understand the importance of providing timely
+          and efficient service to customers, and how to manage customer
+          expectations and handle challenging situations professionally. These
+          soft skills are essential for building a successful career in computer
+          systems servicing.
+        </span>
+        <br />
+        <br />
+        <span class="text">
+          Throughout the course, students in the CSS strand engage in practical
+          exercises and projects to apply their knowledge and skills. They work
+          on real-world scenarios, troubleshooting common computer issues, and
+          maintaining computer systems in a simulated environment. This hands-on
+          approach allows them to develop their problem-solving abilities and
+          gain the confidence needed to tackle complex computer servicing tasks.
+        </span>
+        <br />
+        <br />
+        <span class="text">
+          Upon completion of the CSS strand, students have various career
+          options available to them. They can work as computer technicians,
+          providing technical support and maintenance services to individuals
+          and organizations. They can also pursue further education in the field
+          of computer science or information technology, specializing in areas
+          such as system administration, network engineering, or cybersecurity.
+          The skills and knowledge acquired in the CSS strand provide a solid
+          foundation for further career growth and development.
+        </span>
+        <br />
+        <br />
+        <span class="text">
+          In summary, the Computer Systems Servicing (CSS) strand is a
+          vocational course that equips students with the technical skills and
+          knowledge needed to diagnose, repair, and maintain computer systems.
+          From hardware troubleshooting to software installation and network
+          maintenance, students gain a comprehensive understanding of computer
+          servicing. Additionally, they develop important soft skills, such as
+          communication and problem-solving abilities, as well as
+          professionalism and customer service. With a hands-on approach and
+          practical exercises, students are prepared for various career
+          opportunities in the field of computer systems servicing or further
+          education in related disciplines.
+        </span>
+      </p>
+    </section>
+
+    <!-- END OF MAIN TEXT -->
+
+    <hr />
+
+    <!-- CALCULATOR -->
+    <h2 id="calculator">Basic Calculator</h2>
+    <section id="calculator">
+      <form name="Calculator" class="calculator">
+        <table>
+          <tr></tr>
+
+          <tr>
+            <td>
+              <input type="text" name="Input" size="35" id="display" />
+              <br />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <input
+                type="button"
+                name="one"
+                value=" 1 "
+                onclick="Calculator.Input.value += '1'"
+              />
+              <input
+                type="button"
+                name="two"
+                value=" 2 "
+                onclick="Calculator.Input.value += '2'"
+              />
+              <input
+                type="button"
+                name="three"
+                value=" 3 "
+                onclick="Calculator.Input.value += '3'"
+              />
+              <input
+                type="button"
+                name="add"
+                class="btnTop"
+                value=" + "
+                onclick="Calculator.Input.value += ' + '"
+              />
+              <br />
+              <input
+                type="button"
+                name="four"
+                value=" 4 "
+                onclick="Calculator.Input.value += '4'"
+              />
+              <input
+                type="button"
+                name="five"
+                value=" 5 "
+                onclick="Calculator.Input.value += '5'"
+              />
+              <input
+                type="button"
+                name="six"
+                value=" 6 "
+                onclick="Calculator.Input.value += '6'"
+              />
+              <input
+                type="button"
+                name="minus"
+                value=" - "
+                onclick="Calculator.Input.value += ' - '"
+              />
+              <br />
+              <input
+                type="button"
+                name="seven"
+                value=" 7 "
+                onclick="Calculator.Input.value += '7'"
+              />
+              <input
+                type="button"
+                name="eight"
+                value=" 8 "
+                onclick="Calculator.Input.value += '8'"
+              />
+              <input
+                type="button"
+                name="nine"
+                value=" 9 "
+                onclick="Calculator.Input.value += '9'"
+              />
+              <input
+                type="button"
+                name="mul"
+                value=" * "
+                onclick="Calculator.Input.value += ' * '"
+              />
+              <br />
+              <input
+                type="button"
+                name="clear"
+                value=" c "
+                onclick="Calculator.Input.value = ''"
+              />
+              <input
+                type="button"
+                name="zero"
+                value=" 0 "
+                onclick="Calculator.Input.value += '0'"
+              />
+              <input
+                type="button"
+                name="DoIt"
+                value=" = "
+                onclick="Calculator.Input.value = eval(Calculator.Input.value)"
+              />
+              <input
+                type="button"
+                name="div"
+                value=" / "
+                onclick="Calculator.Input.value += ' / '"
+              />
+              <br />
+            </td>
+          </tr>
+        </table>
+      </form>
+    </section>
+    <!-- END OF CALCULATOR -->
+
+    <hr />
+
+    <!-- ABOUT PAGE -->
+    <section id="about">
+      <h1>My name is Russel M. Giducos</h1>
+      <div>
+        <img
+          src="images/profile.png"
+          alt="Russel Giducos Face"
+          class="profile"
+        />
+      </div>
+      <p class="info">(THE CREATOR OF THIS PAGE)</p>
+      <h2>
+        A very diligent student and can answer your request whatever it may be
+      </h2>
+      <br />
+      <h2>MORE ABOUT ME</h2>
+      <div class="row">
+        <div class="column">
+          <h3>EDUCATION</h3>
+
+          <ul class="educationUL">
+            <p>Senior High School:</p>
+            <li>Polomolok National High School</li>
+            <p>
+              Prk. Madasigon, Octavio Village, Brgy. Cannery Site, Polomolok,
+              South Cotabato
+            </p>
+            <p class="year">2021-2023</p>
+
+            <p>Junior High School:</p>
+            <li>Polomolok National High School</li>
+            <p>
+              Prk. Madasigon, Octavio Village, Brgy. Cannery Site, Polomolok,
+              South Cotabato
+            </p>
+            <p class="year">2018-2021</p>
+            <li>Poblacion Polomolok National High School</li>
+            <p>Yungco Subdivision, Polomolok, South Cotabato</p>
+            <p>2017-2018</p>
+            <p>Elementary:</p>
+            <li>Power Purple Children's School</li>
+            <p>Tuazon Subdivision, Polomolok, South Cotabato</p>
+            <p>2015-2017</p>
+          </ul>
+        </div>
+        <div class="column">
+          <h3>SKILLS</h3>
+          <ul class="skillUL">
+            <li class="skills">Communication Skills</li>
+            <li class="skills">Troubleshooting Skills</li>
+            <li class="skills">Team Player</li>
+            <li class="skills">Basic Computer Troubleshooting</li>
+            <li class="skills">Decision Making</li>
+          </ul>
+
+          <h3>Work Experience</h3>
+
+          <ul class="workUL">
+            <li class="work">Barangay Local Government Unit</li>
+            <p>Octavio Village, Cannery Site, Polomolok, South Cotabato</p>
+            <p>Certificate Encoder</p>
+            <p>May 22,2023 - June 2,2023</p>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <!-- END OF ABOUT PAGE -->
+
+    <script src="script.js"></script>
+  </body>
+</html>

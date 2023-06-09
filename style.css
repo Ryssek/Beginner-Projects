@@ -1,0 +1,318 @@
+* {
+  color: rgba(255, 255, 255, 0.808);
+  font-family: "Times New Roman", Times, serif;
+  box-sizing: border-box;
+  user-select: none;
+}
+
+hr {
+  width: 90%;
+  border: 3px solid gray;
+  border-radius: 3px;
+}
+
+html {
+  scroll-behavior: smooth;
+  height: 100vh;
+}
+
+body {
+  height: 100%;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  background-image: linear-gradient(to right, #434343 0%, black 100%);
+  background-color: #000000;
+}
+
+.introduction {
+  font-size: 2rem;
+  padding-top: 15px;
+  margin-left: 0;
+  padding-left: 1.9rem;
+}
+
+.icon {
+  width: 25px;
+  height: 25px;
+  margin-right: 5px;
+}
+
+.arrow {
+  width: 23px;
+  height: 23px;
+}
+
+p.navBarSideText {
+  color: white;
+  font-size: 1.4rem;
+  padding: 12px 0 0 15px;
+  margin: 0;
+  float: left;
+}
+
+.text {
+  padding-left: 1.4rem;
+}
+
+p.textBox {
+  margin: 5px 40px;
+}
+
+#home {
+  margin: 16.7%;
+}
+
+p.sideText {
+  text-align: right;
+  margin-right: 15px;
+  font-size: 1.7rem;
+  padding-bottom: auto;
+}
+
+#content {
+  user-select: none;
+  text-align: justify;
+  font-size: 1.4rem;
+}
+
+h1 {
+  font-size: 2.5rem;
+  text-align: center;
+  user-select: none;
+}
+
+h2 {
+  text-align: center;
+  user-select: none;
+}
+
+h1:hover {
+  cursor: default;
+}
+
+/* NAV BAR STYLES */
+#navbar {
+  overflow: hidden;
+  background-color: #333;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+#navbar a {
+  float: right;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  transition: background-color 0.15s;
+}
+
+#navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+#navbar a:active {
+  background-color: white;
+}
+
+#content {
+  padding: 16px;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .content {
+  padding-top: 60px;
+}
+
+/* END OF NAVBAR STYLES */
+
+/* CALCULATOR */
+.tableH {
+  font-size: 1.4rem;
+}
+
+h2#calculator {
+  padding-top: 60px;
+  margin: 0 0 20px 0;
+  font-size: 2rem;
+}
+
+#calculator {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 50px;
+  padding-bottom: 50px;
+}
+
+input[type="button"] {
+  width: 60px;
+  height: 60px;
+  float: left;
+  padding: 0;
+  margin: 10px;
+  box-sizing: border-box;
+  background: #0c0d0e;
+  border: 2px solid white;
+  font-size: 30px;
+  line-height: 30px;
+  border-radius: 50%;
+  font-weight: 700;
+  color: #f1f1f1;
+  cursor: pointer;
+  transition: background-color 0.15s, color 0.15s;
+}
+
+input[type="button"]:active {
+  background-color: white;
+  color: black;
+}
+
+input[type="text"] {
+  width: 270px;
+  height: 60px;
+  float: left;
+  padding: 0;
+  box-sizing: border-box;
+  border: none;
+  background: none;
+  color: red;
+  text-align: right;
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 60px;
+  margin: 0 25px;
+  user-select: none;
+  cursor: default;
+}
+
+.calculator {
+  background-color: #c0c0c0;
+  box-shadow: 0px 0px 0px 10px #c7b6b6;
+  border: 5px solid black;
+  border-radius: 10px;
+}
+
+#display {
+  height: 40px;
+  text-align: right;
+  background-color: black;
+  border: 3px solid white;
+  font-size: 16px;
+  left: 2px;
+  top: 2px;
+  color: white;
+  user-select: none;
+}
+
+.btnTop {
+  color: white;
+  background-color: #6f6f6f;
+  font-size: 14px;
+  margin: auto;
+  width: 50px;
+  height: 25px;
+}
+
+table {
+  border: 2px solid rgb(15, 15, 15);
+  align-content: center;
+  padding: 15px;
+  border-spacing: 12px;
+  background-color: rgb(24, 23, 23);
+}
+
+/* END OF CALCULATOR */
+
+/* GO TO TOP BUTTON STYLE */
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: rgb(61, 61, 61);
+  color: white;
+  cursor: pointer;
+  padding: 10px 15px;
+  border-radius: 4px;
+}
+
+#myBtn:hover {
+  background-color: #555;
+}
+
+/* GO TO TOP STYLE END */
+
+/* ABOUT STYLE */
+.info {
+  text-align: center;
+}
+
+.profile {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  height: auto;
+  width: 300px;
+  border: 5px solid rgba(102, 97, 97, 0.712);
+  border-radius: 160px;
+}
+
+#about {
+  padding-top: 35px;
+}
+
+.column {
+  text-align: center;
+  float: left;
+  width: 50%;
+  padding: 10px;
+}
+
+ul.educationUL,
+ul.skillUL,
+ul.workUL {
+  display: inline-block;
+  text-align: left;
+}
+
+ul.educationUL {
+  margin-top: 0;
+  font-size: 1.2rem;
+}
+
+ul.skillUL {
+  font-size: 1.2rem;
+}
+
+li.skills {
+  padding: 5px;
+  margin: 0;
+}
+
+li.work {
+  font-size: 1.2rem;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* END OF ABOUT STYLES */
